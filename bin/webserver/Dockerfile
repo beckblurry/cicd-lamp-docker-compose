@@ -20,6 +20,6 @@ RUN docker-php-ext-install pdo_mysql pdo_sqlite mysqli curl tokenizer json
 
 RUN a2enmod rewrite headers
 
-COPY www/* /var/www/html
+COPY www/* /var/www/html/
 COPY php.ini /usr/local/etc/php/php.ini
 COPY default.conf /etc/apache2/sites-enabled/default.conf
