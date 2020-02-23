@@ -24,7 +24,7 @@ FROM php:7.1.20-apache
 #RUN apt-get -y install libsqlite3-dev libsqlite3-0 mysql-client
 #RUN docker-php-ext-install pdo_mysql 
 #RUN docker-php-ext-install pdo_sqlite
-#RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install mysqli
 #
 #RUN docker-php-ext-install curl
 #RUN docker-php-ext-install tokenizer
@@ -44,3 +44,5 @@ FROM php:7.1.20-apache
 #
 ## Enable apache modules
 #RUN a2enmod rewrite headers
+
+COPY ioncube_loader_lin_7.1.so /usr/local/lib/php/extensions/no-debug-non-zts-20160303/
