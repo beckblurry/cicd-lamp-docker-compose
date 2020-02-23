@@ -11,7 +11,7 @@ services:
       - "443:443"
     links: 
       - mysql
-    volumes: 
+#    volumes: 
 #      - ${DOCUMENT_ROOT-./bin/webserver/www}:/var/www/html
 #      - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/php.ini
 #      - ${VHOSTS_DIR-./config/vhosts}:/etc/apache2/sites-enabled
